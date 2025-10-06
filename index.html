@@ -1,509 +1,252 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Raquel Dettoni - QA e Desenvolvedora Front-end</title>
-
- 
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <!-- Estilos customizados -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Raquel Sottoriva Dettoni • QA Engineer & Test Automation</title>
+  <meta name="description" content="Portfólio profissional de Raquel Sottoriva Dettoni — QA | Test Automation (Cypress, Robot Framework), testes de API e performance.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-amber-50 text-brown-900 font-sans">
-  <!-- Navbar -->
-  <nav class="fixed w-full bg-amber-100 shadow-md z-50">
-    <div class="container mx-auto px-6 py-3">
-      <div class="flex justify-between items-center">
-        <div class="text-2xl font-bold text-brown-800">Raquel Dettoni</div>
-        <div class="hidden md:flex space-x-8">
-          <a href="#home" class="nav-link text-brown-800 hover:text-brown-600 active">Início</a>
-          <a href="#about" class="nav-link text-brown-800 hover:text-brown-600">Sobre</a>
-          <a href="#skills" class="nav-link text-brown-800 hover:text-brown-600">Habilidades</a>
-          <a href="#resume" class="nav-link text-brown-800 hover:text-brown-600">Currículo</a>
-          <a href="#portfolio" class="nav-link text-brown-800 hover:text-brown-600">Portfólio</a>
-          <a href="#contact" class="nav-link text-brown-800 hover:text-brown-600">Contato</a>
+<body>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">
+          <div class="logo" aria-hidden="true">QA</div>
+          <span>Raquel S. Dettoni</span>
         </div>
-        <div class="md:hidden">
-          <button id="menu-btn" class="text-brown-800 focus:outline-none">
-            <i class="fas fa-bars text-2xl"></i>
-          </button>
+        <div class="menu" role="navigation" aria-label="Seções do site">
+          <a href="#sobre">Sobre</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#experiencias">Experiências</a>
+          <a href="#projetos">Projetos</a>
+          <a href="#formacao">Formação</a>
+          <a href="#contato">Contato</a>
+          <button class="btn secondary" id="modeBtn" aria-pressed="false" title="Alternar tema">Tema</button>
         </div>
-      </div>
-      <!-- Mobile  -->
-      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-        <a href="#home" class="block py-2 text-brown-800 hover:text-brown-600">Início</a>
-        <a href="#about" class="block py-2 text-brown-800 hover:text-brown-600">Sobre</a>
-        <a href="#skills" class="block py-2 text-brown-800 hover:text-brown-600">Habilidades</a>
-        <a href="#resume" class="block py-2 text-brown-800 hover:text-brown-600">Currículo</a>
-        <a href="#portfolio" class="block py-2 text-brown-800 hover:text-brown-600">Portfólio</a>
-        <a href="#contact" class="block py-2 text-brown-800 hover:text-brown-600">Contato</a>
-      </div>
+      </nav>
     </div>
-  </nav>
+  </header>
 
-  <!-- Home  -->
-  <section id="home" class="section flex items-center bg-gradient-to-b from-amber-100 to-amber-50">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-1/2 mb-10 md:mb-0">
-          <h1 class="text-4xl md:text-6xl font-bold text-brown-800 mb-4 fade-in">
-            Olá, eu sou <span class="text-amber-700">Raquel Dettoni</span>
-          </h1>
-          <h2 class="text-2xl md:text-3xl text-brown-700 mb-6 fade-in" style="animation-delay: 0.3s;">
-            QA e Desenvolvedora Front-end
-          </h2>
-          <p class="text-lg text-brown-600 mb-8 fade-in" style="animation-delay: 0.6s;">
-            Especialista em garantir qualidade e criar experiências digitais excepcionais.
-          </p>
-          <div class="flex space-x-4 fade-in" style="animation-delay: 0.9s;">
-            <a href="#contact" class="bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-lg transition">Contate-me</a>
-            <a href="#portfolio" class="border-2 border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white px-6 py-3 rounded-lg transition">Ver Portfólio</a>
-          </div>
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="wrap hero" id="topo">
+      <!-- AQUI: coluna esquerda com classe hero-copy para controlar largura/line-height -->
+      <div class="hero-copy">
+        <span class="chip">Qualidade de Software • Test Automation</span>
+        <h1>QA Engineer focada em automação com <span class="grad">Cypress, Robot Framework e testes de API</span>.</h1>
+        <p>Atuação em cenários de regressão, E2E, API e performance. Criação de suítes confiáveis, estáveis e observáveis para aumentar a confiança em releases e acelerar o ciclo de entrega.</p>
+        <div class="row mt-14">
+          <a class="btn" href="#contato">Fale comigo</a>
+          <a class="btn secondary" href="#projetos">Ver projetos</a>
         </div>
-        <div class="md:w-1/2 flex justify-center">
-          <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-amber-700 shadow-xl">
-            <!-- Placeholder para imagem de perfil -->
-            <div class="w-full h-full bg-amber-200 flex items-center justify-center">
-              <i class="fas fa-user text-8xl text-amber-700"></i>
+        <div class="row mt-18">
+          <span class="muted">Baseada no RS • Disponível para remoto</span>
+        </div>
+      </div>
+
+      <div class="hero-card" aria-label="Indicadores rápidos">
+        <div class="hero-grid">
+          <div class="hero-tile" aria-label="Foco em automação"><span class="muted">Foco</span><span class="metric">Automação</span></div>
+          <div class="hero-tile" aria-label="Cypress e Robot"><span class="muted">Stack</span><span class="metric">Cypress • Robot</span></div>
+          <div class="hero-tile" aria-label="APIs e Mobile"><span class="muted">Âmbito</span><span class="metric">Web • API • Mobile</span></div>
+          <div class="hero-tile" aria-label="Performance"><span class="muted">Perf</span><span class="metric">K6*</span></div>
+          <div class="hero-tile" aria-label="Integração"><span class="muted">Integração</span><span class="metric">CI/CD</span></div>
+          <div class="hero-tile" aria-label="Qualidade contínua"><span class="muted">Qualidade</span><span class="metric">Contínua</span></div>
+        </div>
+        <p class="muted" style="margin:10px 6px 0">*Experimentos e estudos com performance para serviços e SPA.</p>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section id="sobre">
+      <div class="wrap">
+        <h2>Sobre</h2>
+        <p class="sub">Profissional de Qualidade de Software com experiência em automação de testes (Front-end e API), colaboração com times de engenharia e foco em entregar software confiável e sustentável.</p>
+        <div class="card">
+          <p>Minha atuação combina <strong>design de cenários</strong>, <strong>implementação de suites</strong> e <strong>observabilidade</strong> (logs, relatórios e métricas) para que as pipelines sinalizem problemas cedo. Valorizo <em>manutenibilidade</em>, <em>estabilidade</em> e <em>clareza</em>, testes que explicam o produto.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HABILIDADES ===== -->
+    <section id="habilidades">
+      <div class="wrap">
+        <h2>Habilidades</h2>
+        <p class="sub">Ferramentas e práticas que uso no dia a dia.</p>
+        <div class="skills">
+          <div class="skill-card">
+            <h3>Automação & QA</h3>
+            <div class="tags" aria-label="Tecnologias de automação">
+              <span class="tag">Cypress</span>
+              <span class="tag">Robot Framework</span>
+              <span class="tag">Playwright*</span>
+              <span class="tag">Selenium*</span>
+              <span class="tag">Testes de API</span>
+              <span class="tag">K6 (perf)</span>
+              <span class="tag">Postman/Newman</span>
+              <span class="tag">BDD / Gherkin</span>
+              <span class="tag">Page Objects</span>
+            </div>
+            <p class="muted top-gap">*conhecimento complementar conforme necessidade de projeto.</p>
+          </div>
+          <div class="skill-card">
+            <h3>Práticas de Engenharia</h3>
+            <div class="tags" aria-label="Práticas de engenharia">
+              <span class="tag">CI/CD</span>
+              <span class="tag">Git • Pull Requests</span>
+              <span class="tag">Qualidade Contínua</span>
+              <span class="tag">Test Pyramid</span>
+              <span class="tag">Observabilidade</span>
+              <span class="tag">Relatórios Allure</span>
+              <span class="tag">Code Review</span>
+              <span class="tag">Análise de Regressão</span>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- About  -->
-  <section id="about" class="section bg-amber-50">
-    <div class="container mx-auto px-6 py-16">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-brown-800 mb-12">Sobre Mim</h2>
-      <div class="flex flex-col md:flex-row items-center">
-        <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
-          <div class="relative w-64 h-64 rounded-full overflow-hidden border-4 border-amber-700 shadow-lg">
-            <!-- Placeholder para imagem -->
-            <div class="w-full h-full bg-amber-200 flex items-center justify-center">
-              <i class="fas fa-laptop-code text-7xl text-amber-700"></i>
-            </div>
-          </div>
-        </div>
-        <div class="md:w-2/3 md:pl-12">
-          <p class="text-lg text-brown-700 mb-6">
-            Sou uma profissional apaixonada por tecnologia, com experiência combinada em Quality Assurance e Desenvolvimento Front-end. Minha abordagem combina atenção meticulosa aos detalhes com criatividade para desenvolver soluções digitais que não apenas funcionam perfeitamente, mas também proporcionam excelentes experiências ao usuário.
-          </p>
-          <p class="text-lg text-brown-700 mb-6">
-            Com formação em [Área de Formação] e [X] anos de experiência no mercado, tenho trabalhado em diversos projetos, desde pequenos sites até aplicações empresariais complexas. Minha dupla especialização me permite entender profundamente todo o ciclo de desenvolvimento de software.
-          </p>
-          <p class="text-lg text-brown-700 mb-8">
-            Quando não estou codificando ou testando sistemas, gosto de [hobbies/interesses pessoais], o que me ajuda a manter um equilíbrio saudável entre vida profissional e pessoal.
-          </p>
-          <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-            <div class="bg-amber-100 p-4 rounded-lg shadow">
-              <h3 class="font-bold text-amber-800">Nome:</h3>
-              <p>Raquel Dettoni</p>
-            </div>
-            <div class="bg-amber-100 p-4 rounded-lg shadow">
-              <h3 class="font-bold text-amber-800">Email:</h3>
-              <p>raquel@exemplo.com</p>
-            </div>
-            <div class="bg-amber-100 p-4 rounded-lg shadow">
-              <h3 class="font-bold text-amber-800">Experiência:</h3>
-              <p>X+ anos</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills  -->
-  <section id="skills" class="section bg-amber-100 py-16">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-brown-800 mb-12">Minhas Habilidades</h2>
-
-      <div class="mb-16">
-        <h3 class="text-2xl font-semibold text-brown-700 mb-6 text-center">Quality Assurance</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="skill-item bg-white p-6 rounded-lg shadow-lg text-center">
-            <div class="text-4xl text-amber-700 mb-4"><i class="fas fa-bug"></i></div>
-            <h4 class="font-bold text-brown-800 mb-2">Testes Manuais</h4>
-            <p class="text-brown-600">Execução detalhada de casos de teste e relatórios de bugs</p>
-          </div>
-          <div class="skill-item bg-white p-6 rounded-lg shadow-lg text-center">
-            <div class="text-4xl text-amber-700 mb-4"><i class="fas fa-robot"></i></div>
-            <h4 class="font-bold text-brown-800 mb-2">Automação de Testes</h4>
-            <p class="text-brown-600">Selenium, Cypress e outras ferramentas de automação</p>
-          </div>
-          <div class="skill-item bg-white p-6 rounded-lg shadow-lg text-center">
-            <div class="text-4xl text-amber-700 mb-4"><i class="fas fa-file-contract"></i></div>
-            <h4 class="font-bold text-brown-800 mb-2">Planejamento de Testes</h4>
-            <p class="text-brown-600">Estratégias e planos de teste eficientes</p>
-          </div>
-          <div class="skill-item bg-white p-6 rounded-lg shadow-lg text-center">
-            <div class="text-4xl text-amber-700 mb-4"><i class="fas fa-chart-line"></i></div>
-            <h4 class="font-bold text-brown-800 mb-2">Controle de Qualidade</h4>
-            <p class="text-brown-600">Garantia de qualidade em todo o ciclo de desenvolvimento</p>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <h3 class="text-2xl font-semibold text-brown-700 mb-6 text-center">Desenvolvimento Front-end</h3>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div class="skill-item bg-white p-6 rounded-lg shadow-lg text-center">
-            <div class="text-4xl text-amber-700 mb-4"><i class="fab fa-html5"></i></div>
-            <h4 class="font-bold text-brown-800 mb-2">HTML5</h4>
-            <div class="w-full bg-amber-200 rounded-full h-2.5">
-              <div class="bg-amber-700 h-2.5 rounded-full" style="width: 95%"></div>
-            </div>
-          </div>
-          <div class="skill-item bg-white p-6 rounded-lg shadow-lg text-center">
-            <div class="text-4xl text-amber-700 mb-4"><i class="fab fa-css3-alt"></i></div>
-            <h4 class="font-bold text-brown-800 mb-2">CSS3</h4>
-            <div class="w-full bg-amber-200 rounded-full h-2.5">
-              <div class="bg-amber-700 h-2.5 rounded-full" style="width: 90%"></div>
-            </div>
-          </div>
-          <div class="skill-item bg-white p-6 rounded-lg shadow-lg text-center">
-            <div class="text-4xl text-amber-700 mb-4"><i class="fab fa-js"></i></div>
-            <h4 class="font-bold text-brown-800 mb-2">JavaScript</h4>
-            <div class="w-full bg-amber-200 rounded-full h-2.5">
-              <div class="bg-amber-700 h-2.5 rounded-full" style="width: 85%"></div>
-            </div>
-          </div>
-          <div class="skill-item bg-white p-6 rounded-lg shadow-lg text-center">
-            <div class="text-4xl text-amber-700 mb-4"><i class="fab fa-react"></i></div>
-            <h4 class="font-bold text-brown-800 mb-2">React</h4>
-            <div class="w-full bg-amber-200 rounded-full h-2.5">
-              <div class="bg-amber-700 h-2.5 rounded-full" style="width: 80%"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Resume  -->
-  <section id="resume" class="section bg-amber-50 py-16">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-brown-800 mb-12">Currículo</h2>
-
-      <div class="flex flex-col md:flex-row">
-        <div class="md:w-1/2 md:pr-8 mb-12 md:mb-0">
-          <h3 class="text-2xl font-semibold text-brown-700 mb-8 flex items-center">
-            <i class="fas fa-graduation-cap text-amber-700 mr-3"></i> Formação Acadêmica
-          </h3>
-
-          <div class="relative pl-8 pb-8 border-l-2 border-amber-700">
-            <div class="absolute w-4 h-4 bg-amber-700 rounded-full -left-2 top-0"></div>
-            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-              <h4 class="font-bold text-brown-800 text-lg">Bacharelado em Ciência da Computação</h4>
-              <p class="text-amber-700 font-medium mb-2">Universidade XYZ • 2015 - 2019</p>
-              <p class="text-brown-600">Formação completa em Ciência da Computação com ênfase em Engenharia de Software e Qualidade de Sistemas.</p>
-            </div>
-
-            <div class="absolute w-4 h-4 bg-amber-700 rounded-full -left-2 top-0"></div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-              <h4 class="font-bold text-brown-800 text-lg">Pós-graduação em Qualidade de Software</h4>
-              <p class="text-amber-700 font-medium mb-2">Instituto ABC • 2020 - 2021</p>
-              <p class="text-brown-600">Especialização em metodologias e ferramentas avançadas de garantia de qualidade de software.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="md:w-1/2 md:pl-8">
-          <h3 class="text-2xl font-semibold text-brown-700 mb-8 flex items-center">
-            <i class="fas fa-briefcase text-amber-700 mr-3"></i> Experiência Profissional
-          </h3>
-
-          <div class="relative pl-8 pb-8 border-l-2 border-amber-700">
-            <div class="absolute w-4 h-4 bg-amber-700 rounded-full -left-2 top-0"></div>
-            <div class="bg-white p-6 rounded-lg shadow-md mb-6">
-              <h4 class="font-bold text-brown-800 text-lg">Desenvolvedora Front-end Sênior</h4>
-              <p class="text-amber-700 font-medium mb-2">TechSolutions Inc. • 2021 - Presente</p>
-              <p class="text-brown-600 mb-2">Desenvolvimento de interfaces de usuário responsivas e acessíveis utilizando React, TypeScript e Sass.</p>
-              <ul class="list-disc pl-5 text-brown-600">
-                <li>Liderança técnica em projetos de grande escala</li>
-                <li>Implementação de testes unitários e de integração</li>
-                <li>Colaboração com equipes de UX/UI e backend</li>
-              </ul>
-            </div>
-
-            <div class="absolute w-4 h-4 bg-amber-700 rounded-full -left-2 top-0"></div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-              <h4 class="font-bold text-brown-800 text-lg">Analista de QA</h4>
-              <p class="text-amber-700 font-medium mb-2">DigitalSoft • 2019 - 2021</p>
-              <p class="text-brown-600 mb-2">Responsável pela garantia de qualidade em diversos projetos de software.</p>
-              <ul class="list-disc pl-5 text-brown-600">
-                <li>Criação e execução de planos de teste</li>
-                <li>Implementação de automação de testes com Selenium</li>
-                <li>Análise e reporte de bugs</li>
+    <!-- ===== EXPERIÊNCIAS ===== -->
+    <section id="experiencias">
+      <div class="wrap">
+        <h2>Experiências</h2>
+        <p class="sub">Resumo de atuação profissional.</p>
+        <div class="timeline">
+          <div class="item">
+            <div class="when">Atual</div>
+            <div class="card">
+              <h3>Analista de Testes / QA — Processor</h3>
+              <p>Criação e manutenção de suítes de automação para aplicações web (Cypress) e testes de API. Diagnóstico de flakiness, estabilização de suites e integração com pipelines. Apoio a devs e PMs com evidências e métricas.</p>
+              <ul>
+                <li>Estratégia de regressão por risco e criticidade;</li>
+                <li>Page Objects, fixtures e dados sintéticos;</li>
+                <li>Relatórios claros (Allure) e rastreabilidade por caso de uso.</li>
               </ul>
             </div>
           </div>
-        </div>
-      </div>
-
-      <div class="text-center mt-12">
-        <a href="#" class="bg-amber-700 hover:bg-amber-800 text-white px-8 py-3 rounded-lg inline-flex items-center transition">
-          <i class="fas fa-download mr-2"></i> Baixar Currículo Completo
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Portfolio  -->
-  <section id="portfolio" class="section bg-amber-100 py-16">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-brown-800 mb-12">Portfólio</h2>
-      <p class="text-center text-brown-700 max-w-2xl mx-auto mb-12">Aqui estão alguns dos meus projetos mais recentes. Cada um representa desafios únicos e soluções criativas que desenvolvi.</p>
-
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Projeto 1 -->
-        <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="h-48 bg-amber-200 flex items-center justify-center">
-            <i class="fas fa-laptop-code text-6xl text-amber-700"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-brown-800 mb-2">Projeto 1</h3>
-            <p class="text-brown-600 mb-4">descrição projeto.</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">React</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Node.js</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">MongoDB</span>
+          <div class="item">
+            <div class="when">Anterior</div>
+            <div class="card">
+              <h3>QA Automation (projetos de estudo)</h3>
+              <p>Explorações com Robot Framework (web/API), K6 para testes de performance, e pipelines de exemplo para integrar qualidade ao fluxo de entrega.</p>
             </div>
-            <a href="#" class="text-amber-700 hover:text-amber-800 font-medium inline-flex items-center">
-              Ver no GitHub <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Projeto 2 -->
-        <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="h-48 bg-amber-200 flex items-center justify-center">
-            <i class="fas fa-mobile-alt text-6xl text-amber-700"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-brown-800 mb-2">Projeto 2</h3>
-            <p class="text-brown-600 mb-4">descrição projeto.</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">React Native</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Firebase</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Redux</span>
-            </div>
-            <a href="#" class="text-amber-700 hover:text-amber-800 font-medium inline-flex items-center">
-              Ver no GitHub <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Projeto 3 -->
-        <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="h-48 bg-amber-200 flex items-center justify-center">
-            <i class="fas fa-chart-pie text-6xl text-amber-700"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-brown-800 mb-2">Projeto 3</h3>
-            <p class="text-brown-600 mb-4">descrição projeto.</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Vue.js</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">D3.js</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">REST API</span>
-            </div>
-            <a href="#" class="text-amber-700 hover:text-amber-800 font-medium inline-flex items-center">
-              Ver no GitHub <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Projeto 4 -->
-        <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="h-48 bg-amber-200 flex items-center justify-center">
-            <i class="fas fa-shopping-cart text-6xl text-amber-700"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-brown-800 mb-2">Projeto 4</h3>
-            <p class="text-brown-600 mb-4">descrição projeto.</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Next.js</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Stripe</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">TailwindCSS</span>
-            </div>
-            <a href="#" class="text-amber-700 hover:text-amber-800 font-medium inline-flex items-center">
-              Ver no GitHub <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Projeto 5 -->
-        <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="h-48 bg-amber-200 flex items-center justify-center">
-            <i class="fas fa-robot text-6xl text-amber-700"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-brown-800 mb-2">Projeto 5</h3>
-            <p class="text-brown-600 mb-4">descrição projeto.</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Cypress</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">JavaScript</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Allure</span>
-            </div>
-            <a href="#" class="text-amber-700 hover:text-amber-800 font-medium inline-flex items-center">
-              Ver no GitHub <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Projeto 6 -->
-        <div class="project-card bg-white rounded-lg overflow-hidden shadow-lg">
-          <div class="h-48 bg-amber-200 flex items-center justify-center">
-            <i class="fas fa-blog text-6xl text-amber-700"></i>
-          </div>
-          <div class="p-6">
-            <h3 class="text-xl font-bold text-brown-800 mb-2">Projeto 6</h3>
-            <p class="text-brown-600 mb-4">descrição projeto.</p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Gatsby</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">GraphQL</span>
-              <span class="bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm">Netlify CMS</span>
-            </div>
-            <a href="#" class="text-amber-700 hover:text-amber-800 font-medium inline-flex items-center">
-              Ver no GitHub <i class="fas fa-arrow-right ml-2"></i>
-            </a>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="text-center mt-12">
-        <a href="#" class="border-2 border-amber-700 text-amber-700 hover:bg-amber-700 hover:text-white px-8 py-3 rounded-lg inline-flex items-center transition">
-          <i class="fab fa-github mr-2"></i> Ver Mais no GitHub
-        </a>
+    <!-- ===== PROJETOS ===== -->
+    <section id="projetos">
+      <div class="wrap">
+        <h2>Projetos de Automação</h2>
+        <p class="sub">Casos demonstrativos.</p>
+        <div class="grid">
+          <article class="project card">
+            <div class="thumb">E2E Web com Cypress</div>
+            <div class="meta">
+              <strong>Suite E2E</strong>
+              <a href="#" aria-label="Abrir repositório do projeto">Repositório</a>
+            </div>
+            <p class="muted">Fluxos críticos com Page Objects, dados sintéticos e snapshots estáveis.</p>
+          </article>
+          <article class="project card">
+            <div class="thumb">APIs (Contract & Smoke)</div>
+            <div class="meta">
+              <strong>API Testing</strong>
+              <a href="#">Coleções</a>
+            </div>
+            <p class="muted">Verificações de contrato, autenticação e rotas críticas com reporting.</p>
+          </article>
+          <article class="project card">
+            <div class="thumb">Performance com K6</div>
+            <div class="meta">
+              <strong>Perf/Load</strong>
+              <a href="#">Cenários</a>
+            </div>
+            <p class="muted">Smoke de performance e limites de SLO para endpoints sensíveis.</p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact  -->
-  <section id="contact" class="section bg-amber-50 py-16">
-    <div class="container mx-auto px-6">
-      <h2 class="text-3xl md:text-4xl font-bold text-center text-brown-800 mb-12">Entre em Contato</h2>
-      <p class="text-center text-brown-700 max-w-2xl mx-auto mb-12">Para contato, utilize o formulário abaixo ou os canais informados.</p>
+    <!-- ===== FORMAÇÃO ===== -->
+    <section id="formacao">
+      <div class="wrap">
+        <h2>Formação & Certificações</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Uniftec - Ensino Superior</h3>
+            <p class="muted">Base em desenvolvimento/QA e participação em bootcamps focados em automação Web, API, Mobile e Performance.</p>
+          </div>
+          <div class="card">
+            <h3>Bootcamps & Cursos</h3>
+            <p class="muted">Cypress (Web/E2E), Robot Framework (Web/API), K6 (Performance). Estudos contínuos orientados a projetos.</p>
+          </div>
+          <div class="card">
+            <h3>Comunidade & Conteúdo</h3>
+            <p class="muted">Compartilhamento de aprendizados e boas práticas de QA, foco em qualidade contínua.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-
-      <div class="flex flex-col md:flex-row">
-        <div class="md:w-1/2 mb-12 md:mb-0 md:pr-8">
-          <form class="space-y-6">
-            <div>
-              <label for="name" class="block text-brown-700 font-medium mb-2">Nome</label>
-              <input type="text" id="name" class="w-full px-4 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" placeholder="Seu nome">
+    <!-- ===== CONTATO ===== -->
+    <section id="contato">
+      <div class="wrap contact">
+        <div>
+          <h2>Vamos conversar</h2>
+          <p class="sub">Convites para colaborar, oportunidades ou dúvidas, respondo em breve.</p>
+          <form action="https://formspree.io/f/yourFormId" method="POST">
+            <label class="sr" for="name">Nome</label>
+            <input id="name" name="name" placeholder="Seu nome" required>
+            <label class="sr" for="email">E-mail</label>
+            <input id="email" type="email" name="email" placeholder="Seu e-mail" required>
+            <label class="sr" for="msg">Mensagem</label>
+            <textarea id="msg" name="message" placeholder="Como posso ajudar?"></textarea>
+            <div class="row">
+              <button class="btn" type="submit">Enviar</button>
+              <a class="btn secondary" href="#" download>Baixar CV (PDF)</a>
             </div>
-            <div>
-              <label for="email" class="block text-brown-700 font-medium mb-2">Email</label>
-              <input type="email" id="email" class="w-full px-4 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" placeholder="Seu email">
-            </div>
-            <div>
-              <label for="subject" class="block text-brown-700 font-medium mb-2">Assunto</label>
-              <input type="text" id="subject" class="w-full px-4 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" placeholder="Assunto da mensagem">
-            </div>
-            <div>
-              <label for="message" class="block text-brown-700 font-medium mb-2">Mensagem</label>
-              <textarea id="message" rows="5" class="w-full px-4 py-2 border border-amber-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent" placeholder="Sua mensagem"></textarea>
-            </div>
-            <button type="submit" class="bg-amber-700 hover:bg-amber-800 text-white px-6 py-3 rounded-lg w-full transition">Enviar Mensagem</button>
           </form>
         </div>
-
-        <div class="md:w-1/2 md:pl-8">
-          <div class="bg-white p-8 rounded-lg shadow-lg">
-            <h3 class="text-xl font-bold text-brown-800 mb-6">Informações de Contato</h3>
-
-            <div class="space-y-6">
-              <div class="flex items-start">
-                <div class="text-amber-700 mr-4 mt-1"><i class="fas fa-map-marker-alt text-xl"></i></div>
-                <div>
-                  <h4 class="font-bold text-brown-800">Localização</h4>
-                  <p class="text-brown-600">Antônio Prado, Brasil</p>
-                </div>
-              </div>
-
-              <div class="flex items-start">
-                <div class="text-amber-700 mr-4 mt-1"><i class="fas fa-envelope text-xl"></i></div>
-                <div>
-                  <h4 class="font-bold text-brown-800">Email</h4>
-                  <p class="text-brown-600">raquel@exemplo.com</p>
-                </div>
-              </div>
-
-              <div class="flex items-start">
-                <div class="text-amber-700 mr-4 mt-1"><i class="fas fa-phone-alt text-xl"></i></div>
-                <div>
-                  <h4 class="font-bold text-brown-800">Telefone</h4>
-                  <p class="text-brown-600">+55 54 99999-9999</p>
-                </div>
-              </div>
-
-              <div class="flex items-start">
-                <div class="text-amber-700 mr-4 mt-1"><i class="fab fa-linkedin-in text-xl"></i></div>
-                <div>
-                  <h4 class="font-bold text-brown-800">LinkedIn</h4>
-                  <a href="#" class="text-brown-600 hover:text-amber-700">linkedin.com/in/(usuário)</a>
-                </div>
-              </div>
-
-              <div class="flex items-start">
-                <div class="text-amber-700 mr-4 mt-1"><i class="fab fa-github text-xl"></i></div>
-                <div>
-                  <h4 class="font-bold text-brown-800">GitHub</h4>
-                  <a href="#" class="text-brown-600 hover:text-amber-700">github.com/(usuário)</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="mt-8">
-              <h4 class="font-bold text-brown-800 mb-4">Redes Sociais</h4>
-              <div class="flex space-x-4">
-                <a href="#" class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center hover:bg-amber-700 hover:text-white transition">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center hover:bg-amber-700 hover:text-white transition">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center hover:bg-amber-700 hover:text-white transition">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="#" class="w-10 h-10 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center hover:bg-amber-700 hover:text-white transition">
-                  <i class="fab fa-dribbble"></i>
-                </a>
-              </div>
-            </div>
-
-          </div>
+        <div class="card">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="https://br.linkedin.com/in/raquel-sottoriva-dettoni" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="#" target="_blank" rel="noopener">GitHub</a> (projetos de estudo)</li>
+          </ul>
+          <p class="muted mt-10">Disponível para oportunidades remotas.</p>
         </div>
       </div>
+    </section>
+  </main>
 
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-brown-900 text-amber-100 py-8">
-    <div class="container mx-auto px-6">
-      <div class="flex flex-col md:flex-row justify-between items-center">
-        <div class="mb-4 md:mb-0">
-          <h3 class="text-2xl font-bold">Raquel Dettoni</h3>
-          <p class="text-amber-200">QA e Desenvolvedora Front-end</p>
-        </div>
-        <div class="text-center md:text-right">
-          <p>&copy; 2025 Raquel Dettoni. Todos os direitos reservados.</p>
-          <p class="text-amber-300 mt-1">Desenvolvido com <i class="fas fa-heart text-red-400"></i> e muita caféína</p>
-        </div>
+  <footer>
+    <div class="wrap">
+      <div class="row space-between center">
+        <span>© <span id="y"></span> • Raquel Sottoriva Dettoni</span>
+        <span class="muted">Qualidade de Software • Automação de Testes</span>
       </div>
     </div>
   </footer>
 
-  
-  <script src="script.js" defer></script>
+  <!-- ===== JSON-LD ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Raquel Sottoriva Dettoni",
+    "jobTitle": "QA Engineer",
+    "knowsAbout": ["Cypress", "Robot Framework", "Testes de API", "K6", "Automação de Testes", "Qualidade de Software"],
+    "sameAs": ["https://br.linkedin.com/in/raquel-sottoriva-dettoni"],
+    "worksFor": {"@type":"Organization","name":"Processor"}
+  }
+  </script>
+
+  <script src="main.js" defer></script>
 </body>
 </html>
